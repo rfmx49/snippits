@@ -24,7 +24,7 @@ function quadView() {
 		//SET YOUR FEEDS HERE
 		var viewableFeeds = [feeds[1],feeds[2],feeds[3],feeds[4]];
 		var bottomFeed = false;
-		bottomFeed = feeds[5]; //comment out if you do not want to show bottom feed comment with two slasshes //
+		bottomFeed = feeds[0]; //comment out if you do not want to show bottom feed comment with two slasshes //
 		//SET OPTIONS
 		var autoPlay = "false";
         var muteStatus = "true";
