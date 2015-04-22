@@ -2,6 +2,7 @@
 // @name          QuadView_LiveFeed on BBCAN3 site
 // @description   QuadView_LiveFeed on BBCAN3 site
 // @include       https://bigbrothercanada.globaltv.com/live
+// @include       https://bigbrothercanada.globaltv.com/live/
 // @license       GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
 // @author        rfmx49
 // @version       .2
