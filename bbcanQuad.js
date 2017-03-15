@@ -5,7 +5,7 @@
 // @include       http://bigbrothercanada.globaltv.com/live
 // @license       GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
 // @author        rfmx49
-// @version       .3
+// @version       .4
 // ==/UserScript==
 $( document ).ready(function() {
     quadView();
@@ -13,13 +13,11 @@ $( document ).ready(function() {
 
 function quadView() {
         //Do not change unless feed links have changed.
-		var feeds = ["6388794/events/4789152","16559084/events/4789131","16559088/events/4789946","16559095/events/4798444","16559099/events/4798455"];
+		var feeds = ["6388794/events/4789152","16559084/events/4789131","16559088/events/4789946","16559095/events/4798444"];
 		//Fan feed 0
 		//Feed 1-4 1-4
 		//SET YOUR FEEDS HERE
-		var viewableFeeds = [feeds[1],feeds[2],feeds[3],feeds[4]];
-		var bottomFeed = false;
-		bottomFeed = feeds[0]; //comment out if you do not want to show bottom feed comment with two slasshes //
+		var viewableFeeds = [feeds[0],feeds[1],feeds[2],feeds[3]];
 		//SET OPTIONS
 		var autoPlay = "false";
         var muteStatus = "true";
@@ -43,9 +41,5 @@ function quadView() {
         $('#feed2').html(feed2).width(feedWidth).height(controlsHeight-30);
         $('#feed3').html(feed3).width(feedWidth).height(controlsHeight+60);
         $('#feed4').html(feed4).width(feedWidth).height(controlsHeight+60);
-        if (bottomFeed) {
-        	var feed5='<div class="live-feeds__iframe-container"><div ng-show="feedDisabled" class="live-feeds__disabled ng-hide"><img src="/assets/img/live-feeds/feed-disabled.jpg" class="live-feeds__disabled-image"></div><iframe id="live-feeds-iframe" ng-hide="feedDisabled" bbcan-iframe-resize="" ng-src="https://new.livestream.com/accounts/' + bottomFeed + '/player?pre_event_poster=https://cdn.livestream.com/events/bigbrothercanada/bbc_pre.jpg&amp;post_event_poster=https://cdn.livestream.com/events/bigbrothercanada/bbc_post.jpg&amp;width=' + feedWidth + '&amp;height=' + feedHeight + '&amp;autoPlay=' + autoPlay + '&amp;mute=' + muteStatus + '" frameborder="0" scrolling="no" class="live-feeds__iframe" src="https://new.livestream.com/accounts/6388794/events/' + bottomFeed + '/player?pre_event_poster=https://cdn.livestream.com/events/bigbrothercanada/bbc_pre.jpg&amp;post_event_poster=https://cdn.livestream.com/events/bigbrothercanada/bbc_post.jpg&amp;width=' + feedWidth + '&amp;height=' + feedHeight + '&amp;autoPlay=' + autoPlay + '&amp;mute=' + muteStatus + '" style="width: 100%; height: ' + controlsHeight + 'px;"></iframe></div>';
- 			$('#feed5').html(feed5).width(feedWidth).height(controlsHeight+60);
-        }
 }
 
