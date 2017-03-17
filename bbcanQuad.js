@@ -13,7 +13,7 @@ $( document ).ready(function() {
 
 function quadView() {
         //Do not change unless feed links have changed.
-		var feeds = ["6388794/events/4789152","16559084/events/4789131","16559088/events/4789946","16559095/events/4798444"];
+		var feeds = ["6388794/events/7139268","16559084/events/7139455","16559088/events/7139475","16559095/events/7138839"];
 		//Fan feed 0
 		//Feed 1-4 1-4
 		//SET YOUR FEEDS HERE
